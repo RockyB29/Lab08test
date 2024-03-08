@@ -62,6 +62,9 @@ public class CustomList extends ArrayAdapter<City> {
         return false;
     }
     public void delete(City city) {
-        return;
+        boolean removed = cities.remove(city);
+        if (!removed) {
+            throw new NoSuchElementException("City not found");
+        }
     }
 }
