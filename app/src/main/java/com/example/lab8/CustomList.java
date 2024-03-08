@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -59,5 +60,8 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
         return false;
+    }
+    public void delete(City city) {
+        return;
     }
 }
