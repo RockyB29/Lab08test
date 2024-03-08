@@ -13,7 +13,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
-
 public class CustomListTest {
     private CustomList list;
     public CustomList MockCityList(){
